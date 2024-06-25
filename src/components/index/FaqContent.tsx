@@ -38,10 +38,10 @@ const FaqContent = () => {
               <>
                 <div className='flex flex-col gap-2'>
                   <span className='flex flex-row gap-3 items-center'>
-                    <Image src={f.arrow} alt='' width={30} height={30} />
+                    <Image src={f.arrow} alt='' width={20} height={20} />
                     <p className='lg:text-[24px] text-[16px] text-white font-semibold'>{f.title}</p>
                   </span>
-                  <p className='ml-3 lg:text-[16px] text-[14px] text-white text-opacity-45'>{f.answer}</p>
+                  <p className='ml-6 lg:text-[16px] text-[14px] text-white text-opacity-45'>{f.answer}</p>
                 </div>
                 <hr />
               </>
