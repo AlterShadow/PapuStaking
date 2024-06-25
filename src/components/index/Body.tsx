@@ -73,7 +73,7 @@ const Body = () => {
                         {
                             data.map((d, i)=>{
                                 return(
-                                    <div className='border-2 border-white flex rounded-xl w-full justify-between py-1 px-2'>
+                                    <div key={i} className='border-2 border-white flex rounded-xl w-full justify-between py-1 px-2'>
                                         <p className='text-white font-semibold text-[24px]'>{d.month}</p>
                                         <p className='text-[#FFB11D] font-bold text-[22px]'>{d.month}</p>
                                     </div>
