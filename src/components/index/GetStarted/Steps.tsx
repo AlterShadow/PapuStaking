@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Step1 from "./Step1"
+import Step2 from "./Step2";
 
 const StepContainer: React.FC = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
@@ -15,13 +16,13 @@ const StepContainer: React.FC = () => {
           handleNextPage={() => handleTabChange(activeTab + 1)}
         />
       )}
-      {/* {activeTab === 1 && (
+      {activeTab === 1 && (
         <Step2
           handleNextPage={() => handleTabChange(activeTab + 1)}
           handlePreviousPage={() => handleTabChange(activeTab - 1)}
         />
       )}
-      {activeTab === 2 && (
+      {/* {activeTab === 2 && (
         <ChooseProducts
           handleNextPage={() => handleTabChange(activeTab + 1)}
           handlePreviousPage={() => handleTabChange(activeTab - 1)}
