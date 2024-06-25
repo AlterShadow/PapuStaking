@@ -51,7 +51,7 @@ const Step1: React.FC<Step1Props> = ({ handleNextPage }) => {
           }
         </div>
       </div>
-      <button className='text-3xl font-bold text-white  border-2 rounded-[10px] flex justify-center py-3' onClick={handleNextstep}>Next</button>
+      <button className={`lg:text-3xl font-bold text-white border-dashed  border-2 rounded-[10px] flex justify-center py-3 ${range >0? "bg-[#FFB11D] bg-opacity-50":"flex cursor-not-allowed" } `} onClick={handleNextstep}>Next</button>
     </form>
   );
 }
