@@ -1,7 +1,11 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState, MouseEvent } from 'react'
+import GeneralModal from '../reuseable/GeneralModal'
+import FaqContent from './FaqContent'
 
 const Body = () => {
+    const [open, setOpen] = useState(false)
     const data =[
         {
             month:"1 month",
@@ -20,6 +24,17 @@ const Body = () => {
             amount:"= 30.00% "
         },
     ]
+    const handleFAQ = () =>{
+        setOpen(true)
+    }
+    const closeModal = () => {
+        setOpen(false)
+    }
+    const handleCloseModal1 = (e: MouseEvent<HTMLDivElement>) => {
+        if ((e.target as HTMLElement).classList.contains('modal')) {
+            closeModal()
+        }
+    }
     return (
         <div className='lg:px-[10%] lg:h-[90vh] w-full flex lg:flex-row flex-col items-center justify-between relative'>
             <div className='flex flex-col gap-4 w-[60%]'>
@@ -42,7 +57,7 @@ const Body = () => {
                     <div className='text-[24px] lg:w-[238px] p-[2px] rounded-full bg-gradient-to-tr from-[#EF3F4D] to-[#FBCC55] justify-center flex'>
                         <button className=' w-full bg-[#16181D] font-semibold text-white rounded-full'>Get Started</button>
                     </div>
-                    <button className='text-[24px] font-semibold border-[3px]  text-white lg:w-[238px] p-[1px] rounded-full justify-center flex'>
+                    <button onClick={handleFAQ} className='text-[24px] font-semibold border-[3px]  text-white lg:w-[238px] p-[1px] rounded-full justify-center flex'>
                         View FAQ
                     </button>
                 </div>
@@ -78,6 +93,17 @@ const Body = () => {
                 </div>
 
             </div>
+            {
+                open && (
+                    <GeneralModal
+                        heading='FREQUENTLY ASKED QUESTIONS'
+                        handleClose={handleCloseModal1}
+                        content={<FaqContent/>}
+                        close={closeModal}
+
+                    />
+                )
+            }
         </div>
     )
 }
