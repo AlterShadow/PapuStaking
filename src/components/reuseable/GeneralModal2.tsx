@@ -18,7 +18,7 @@ const GeneralModal2: React.FC<GeneralModalProps2> = ({ handleClose, content, hea
                 className={`modal bg-black z-[500]  bg-opacity-40 fixed inset-0 flex items-center justify-center`}
             >
                 <div
-                    className={`modal-content z-[2000] bg-[#252731] lg:w-[44%] py-6 lg:overflow-hidden px-12 shadow-xl shadow-[#1A1C24] w-full rounded-3xl overflow-y-auto transform transition-transform duration-300 ease-in-out bounce`}
+                    className={`modal-content z-[2000] bg-[#252731] lg:w-[44%] py-6 lg:overflow-hidden lg:px-12 px-3 lg:pt-0 pt-5 shadow-xl shadow-[#1A1C24] w-full rounded-3xl overflow-y-auto transform transition-transform duration-300 ease-in-out bounce`}
                 >
                     <div className="flex justify-between  p-6 items-center">
                         <h2 className=" capitalize text-white lg:text-[20px] text-[18px] font-semibold">{heading}</h2>
