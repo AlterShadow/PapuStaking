@@ -23,7 +23,7 @@ const Nav = () => {
     };
     return (
         <div className='lg:px-[10%]'>
-            <div className='border border-3 px-2 py-1 rounded-full z-[4000] bg-[#16181D] flex flex-row items-center justify-between relative' style={{
+            <div className='border border-3 px-2 py-1 rounded-full z-[500] bg-[#16181D] flex flex-row items-center justify-between relative' style={{
                 borderImage: 'linear-gradient(45deg, #000000, #EF3F4D, #FBCC55, #F58651, #000000) 2',
             }}>
                 <div className='flex flex-row gap-3 items-center '>

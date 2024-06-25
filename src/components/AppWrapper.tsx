@@ -7,7 +7,7 @@ interface AppWrapperprops {
 const AppWrapper:React.FC<AppWrapperprops> = ({children}) => {
   return (
     <div>
-        <Nav/>
+        {/* <Nav/> */}
         {children}
     </div>
   )
