@@ -51,8 +51,8 @@ const Body = () => {
     return (
         <>
             <Nav />
-            <div className='lg:px-[10%] lg:h-[90vh] w-full flex lg:flex-row flex-col items-center justify-between relative'>
-                <div className='flex flex-col gap-4 w-[60%]'>
+            <div className='lg:px-[10%] lg:h-[90vh] w-full lg:mt-0 mt-[4%] px-[2%] flex lg:flex-row flex-col items-center justify-between relative'>
+                <div className='flex flex-col gap-4 lg:w-[60%] w-full'>
                     <p className='lg:text-[72px] md:text-[30px] text-[20px] font-bold lg:w-[80%] w-full text-white'>Stake and Earn $PAPU Today!</p>
                     <div className='flex flex-col gap-4'>
                         <span className='flex flex-row gap-2 items-center'>
@@ -77,12 +77,12 @@ const Body = () => {
                         </button>
                     </div>
                 </div>
-                <Image src={"/img/shadowbg.svg"} className='w-[58%] lg:block hidden absolute right-0' alt='' width={200} height={200} />
-                <div className='w-[40%] z-[500] flex flex-col gap-4'>
+                <Image src={"/img/shadowbg.svg"} className='lg:w-[58%] lg:block hidden absolute right-0' alt='' width={200} height={200} />
+                <div className='lg:w-[40%] w-full  z-[500] flex flex-col gap-4'>
                     <div className='bg-[#1A1C24] rounded-lg p-8'>
-                        <div className='flex flex-row items-center w-full justify-between'>
+                        <div className='flex lg:flex-row flex-col lg:gap-0 gap-3 items-center w-full justify-between'>
                             <Image src={"/img/papulogo.svg"} height={100} width={100} alt='' />
-                            <p className='text-[24px] font-semibold text-white'>CURRENT STAKING APY</p>
+                            <p className='lg:text-[24px] text-[14px]  font-semibold text-white'>CURRENT STAKING APY</p>
                         </div>
                         <div className='flex flex-col gap-3 pt-7'>
                             {

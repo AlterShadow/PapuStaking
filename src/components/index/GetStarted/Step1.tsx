@@ -18,10 +18,10 @@ const Step1: React.FC<Step1Props> = ({ handleNextPage }) => {
   }
   return (
     <form className='p-3 flex flex-col gap-4'>
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-3 gap-4 w-full justify-between lg:px-[3%] px-3'>
-        <button className='bg-[#FFB11D] bg-opacity-50 border-[#FFB11D] border-2 rounded-[10px] lg:text-[22px] flex flex-row items-center gap-3 text-[14px] px-5 py-2'> <Image src={"/img/wal.svg"} height={20} width={20} alt='' /> Amount</button>
-        <button className='bg-transparent bg-opacity-50 border-[#ffffff] border-2 rounded-[10px] lg:text-[22px] flex flex-row items-center gap-3 text-[14px] px-5 py-2'> <Image src={"/img/duration.svg"} height={20} width={20} alt='' /> Duration</button>
-        <button className='bg-transparent bg-opacity-50 border-[#ffffff] border-2 rounded-[10px] lg:text-[22px] flex flex-row items-center gap-3 text-[14px] px-5 py-2'> <Image src={"/img/lock.svg"} height={20} width={20} alt='' /> Review</button>
+      <div className='grid lg:grid-cols-3  grid-cols-3 gap-4 w-full justify-between lg:px-[3%] px-3'>
+        <button className='bg-[#FFB11D] bg-opacity-50 border-[#FFB11D] border-2 rounded-[10px] lg:text-[18px] lg:w-fit flex flex-row items-center gap-3 text-[12px] lg:px-5 px-1 py-2'> <Image src={"/img/wal.svg"} height={15} width={15} alt='' /> Amount</button>
+        <button className='bg-transparent bg-opacity-50 border-[#ffffff] border-2 rounded-[10px] lg:text-[18px] lg:w-fit flex flex-row items-center gap-3 text-[12px]  px-1 py-2'> <Image src={"/img/duration.svg"} height={15} width={15} alt='' /> Duration</button>
+        <button className='bg-transparent bg-opacity-50 border-[#ffffff] border-2 rounded-[10px] lg:text-[18px] lg:w-fit flex flex-row items-center gap-3 text-[12px] lg:px-5 px-1 py-2'> <Image src={"/img/lock.svg"} height={15} width={15} alt='' /> Review</button>
       </div>
       <div className='flex flex-col gap-2'>
         <p className='lg:text-[30px] md:text-[20px] text-[16px] font-semibold'>How much would you like to stake?</p>

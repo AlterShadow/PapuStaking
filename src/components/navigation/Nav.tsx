@@ -31,20 +31,20 @@ const Nav = () => {
                         navs.map((n, i) => {
                             return (
                                 <div key={i}>
-                                    <Link onClick={() => handleClick(n.act)} href={n.link} className={`${active === n.act ? "text-[#FEA62E] text-[22px]" : "text-[22px] text-white"} `}>{n.title}</Link>
+                                    <Link onClick={() => handleClick(n.act)} href={n.link} className={`${active === n.act ? "text-[#FEA62E] lg:text-[22px] text-[13px]" : "lg:text-[22px] text-[13px] text-white"} `}>{n.title}</Link>
                                 </div>
                             )
                         })
                     }
                 </div>
-                <div className='border-b-2 border-[#EF3F4D] pb-10 rounded-b-2xl absolute right-[40%] top-2 bg-[#16181D] p-2 '>
+                <div className='border-b-2 lg:block hidden border-[#EF3F4D] pb-10 rounded-b-2xl absolute right-[40%] top-2 bg-[#16181D] p-2 '>
                     <Image src={"/img/papus.svg"} alt='' width={200} height={200} />
                 </div>
 
                 <div>
                     <button className='flex flex-row items-center gap-2 border pr-2 pl-1 py-1 rounded-full border-[#EF3F4D]'>
                         <Image src={"/img/bblogo.svg"} width={30} height={30} alt='' />
-                        <p className='text-[#ffffff] text-[20px]'>Connect wallet</p>
+                        <p className='text-[#ffffff] lg:text-[20px] text-[13px]'>Connect wallet</p>
                     </button>
                 </div>
             </div>
